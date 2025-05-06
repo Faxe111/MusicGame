@@ -44,7 +44,7 @@ fetch('songs.json')
 
       const front = document.createElement('div');
       front.className = 'card-front';
-      front.innerHTML = `<strong>${song.title}</strong><br/><em>QR-Code</em>`;
+      front.innerHTML = `<img src="${song.image}" alt="QR Code" style="max-width: 100%; max-height: 100%;" />`;
 
       const back = document.createElement('div');
       back.className = 'card-back';
