@@ -2,12 +2,12 @@
 fetch('songs.json')
   .then(response => response.json())
   .then(data => {
-    const allSongs = data.map(song => ({
+   /* const allSongs = data.map(song => ({
       title: song.name,
       year: parseInt(song.year),
       artist: song.artist,
       image: `qrcodes/${song.version}_${song.number}.jpg`,
-    }));
+    })); */
     const allSongs = [
       { title: "Song A", year: 1985, artist: "Artist A" },
       { title: "Song B", year: 1992, artist: "Artist B" },
