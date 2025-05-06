@@ -2,29 +2,12 @@
 fetch('songs.json')
   .then(response => response.json())
   .then(data => {
-   /* const allSongs = data.map(song => ({
+   const allSongs = data.map(song => ({
       title: song.name,
       year: parseInt(song.year),
       artist: song.artist,
       image: `qrcodes/${song.version}_${song.number}.jpg`,
-    })); */
-    const allSongs = [
-      { title: "Song A", year: 1985, artist: "Artist A" },
-      { title: "Song B", year: 1992, artist: "Artist B" },
-      { title: "Song C", year: 1978, artist: "Artist C" },
-      { title: "Song D", year: 2001, artist: "Artist D" },
-      { title: "Song E", year: 2010, artist: "Artist E" },
-      { title: "Song F", year: 1965, artist: "Artist F" },
-      { title: "Song G", year: 2020, artist: "Artist G" },
-      { title: "Song H", year: 1999, artist: "Artist H" },
-      { title: "Song I", year: 1970, artist: "Artist I" },
-      { title: "Song J", year: 1988, artist: "Artist J" },
-      ...Array.from({ length: 30 }, (_, i) => ({
-        title: `Song ${String.fromCharCode(75 + i)}`,
-        year: 1950 + Math.floor(Math.random() * 75),
-        artist: `Artist ${String.fromCharCode(75 + i)}`
-      }))
-    ];
+    }));
 
     let songs = [];
     const deck = document.getElementById('deck');
