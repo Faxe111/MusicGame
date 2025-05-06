@@ -1,5 +1,5 @@
 // script.js
-fetch('songs.json')
+fetch('Songs.json')
   .then(response => response.json())
   .then(data => {
     const allSongs = data.map(song => ({
