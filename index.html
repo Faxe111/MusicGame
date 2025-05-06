@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musik-Sortierspiel</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    #deck, #timeline, #discard {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 120px;
+      height: 160px;
+      perspective: 1000px;
+    }
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    .dropzone {
+      width: 30px;
+      height: 160px;
+      background: rgba(0,0,0,0.1);
+      border: 2px dashed #aaa;
+      border-radius: 4px;
+    }
+    .card.dragging .card-back {
+      display: none;
+    }
+    #info {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    #restartButton {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #restartButton:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎵 Musik-Sortierspiel</h1>
+  <p>Ziel: Ordne die Songs nach ihrem Erscheinungsjahr.</p>
+  <div id="deck"></div>
+  <h2>Deine Timeline</h2>
+  <div id="timeline"></div>
+  <h2>Ablagestapel (falsch sortiert)</h2>
+  <div id="discard"></div>
+  <div id="info">Noch 10 Songs bis zum Sieg</div>
+  <button id="restartButton">Spiel neu starten</button>
+
+  <script>
+    const allSongs = [
+      { title: "Song A", year: 1985, artist: "Artist A" },
+      { title: "Song B", year: 1992, artist: "Artist B" },
+      { title: "Song C", year: 1978, artist: "Artist C" },
+      { title: "Song D", year: 2001, artist: "Artist D" },
+      { title: "Song E", year: 2010, artist: "Artist E" },
+      { title: "Song F", year: 1965, artist: "Artist F" },
+      { title: "Song G", year: 2020, artist: "Artist G" },
+      { title: "Song H", year: 1999, artist: "Artist H" },
+      { title: "Song I", year: 1970, artist: "Artist I" },
+      { title: "Song J", year: 1988, artist: "Artist J" },
+      ...Array.from({ length: 30 }, (_, i) => ({
+        title: `Song ${String.fromCharCode(75 + i)}`,
+        year: 1950 + Math.floor(Math.random() * 75),
+        artist: `Artist ${String.fromCharCode(75 + i)}`
+      }))
+    ];
+
+    let songs = [];
+    const deck = document.getElementById('deck');
+    const timeline = document.getElementById('timeline');
+    const discard = document.getElementById('discard');
+    const info = document.getElementById('info');
+    const restartButton = document.getElementById('restartButton');
+
+    let draggedCard = null;
+    let gameStarted = false;
+    let correctCount = 0;
+    const WIN_COUNT = 10;
+
+    function updateInfo() {
+      if (correctCount >= WIN_COUNT) {
+        info.textContent = '🎉 Du hast 10 Songs richtig einsortiert und gewonnen!';
+        deck.innerHTML = '';
+        restartButton.style.display = 'inline-block';
+      } else {
+        info.textContent = `Noch ${WIN_COUNT - correctCount} Songs bis zum Sieg`;
+      }
+    }
+
+    function createCard(song, showAll = false) {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.draggable = true;
+      card.dataset.year = song.year;
+      card.dataset.title = song.title;
+      card.dataset.artist = song.artist;
+
+      const inner = document.createElement('div');
+      inner.className = 'card-inner';
+
+      const front = document.createElement('div');
+      front.className = 'card-front';
+      front.innerHTML = `<strong>${song.title}</strong><br/><em>QR-Code</em>`;
+
+      const back = document.createElement('div');
+      back.className = 'card-back';
+      if (showAll) {
+        back.innerHTML = `<strong>${song.title}</strong><br/><em>${song.artist}</em><br/><span>${song.year}</span>`;
+      } else {
+        back.innerHTML = `<span>${song.year}</span>`;
+      }
+
+      inner.appendChild(front);
+      inner.appendChild(back);
+      card.appendChild(inner);
+
+      card.addEventListener('dragstart', () => {
+        draggedCard = card;
+        card.classList.add('dragging');
+      });
+      card.addEventListener('dragend', () => {
+        card.classList.remove('dragging');
+      });
+
+      return card;
+    }
+
+    function createGuessInterface(card) {
+      const back = card.querySelector('.card-back');
+      if (back.querySelector('input')) return;
+
+      const container = document.createElement('div');
+      container.style.marginTop = '10px';
+      container.style.display = 'flex';
+      container.style.flexDirection = 'column';
+      container.style.alignItems = 'center';
+      container.style.gap = '5px';
+
+      const inputTitle = document.createElement('input');
+      inputTitle.placeholder = 'Songtitel';
+      const inputArtist = document.createElement('input');
+      inputArtist.placeholder = 'Artist';
+
+      const guessButton = document.createElement('button');
+      guessButton.textContent = 'Überprüfen';
+      guessButton.style.marginTop = '5px';
+
+      const skipButton = document.createElement('button');
+      skipButton.textContent = "Skip";
+      skipButton.style.marginTop = '5px';
+
+      const reveal = () => {
+        back.innerHTML = `<strong>${card.dataset.title}</strong><br/><em>${card.dataset.artist}</em><br/><span>${card.dataset.year}</span>`;
+        card.appendChild(card.querySelector('.card-inner'));
+      };
+
+      guessButton.onclick = () => {
+        const titleCorrect = inputTitle.value.trim().toLowerCase() === card.dataset.title.toLowerCase();
+        const artistCorrect = inputArtist.value.trim().toLowerCase() === card.dataset.artist.toLowerCase();
+        reveal();
+        if (titleCorrect && artistCorrect) {
+          back.style.color = 'green';
+        }
+        setTimeout(() => {
+          container.remove();
+          drawNextCard();
+        }, 100);
+      };
+
+      skipButton.onclick = () => {
+        reveal();
+        setTimeout(() => {
+          container.remove();
+          drawNextCard();
+        }, 100);
+      };
+
+      container.appendChild(inputTitle);
+      container.appendChild(inputArtist);
+      container.appendChild(guessButton);
+      container.appendChild(skipButton);
+
+      back.appendChild(container);
+    }
+
+    function createDropzone(index) {
+      const dz = document.createElement('div');
+      dz.className = 'dropzone';
+
+      dz.addEventListener('dragover', e => e.preventDefault());
+      dz.addEventListener('drop', () => {
+        if (!draggedCard) return;
+
+        if (!gameStarted) {
+          const firstCard = draggedCard;
+          firstCard.classList.add('flipped');
+          timeline.innerHTML = '';
+          timeline.appendChild(createDropzone(0));
+          timeline.appendChild(firstCard);
+          timeline.appendChild(createDropzone(1));
+          draggedCard = null;
+          gameStarted = true;
+          correctCount = 1;
+          updateInfo();
+          createGuessInterface(firstCard);
+          return;
+        }
+
+        const year = parseInt(draggedCard.dataset.year);
+        const cards = Array.from(timeline.querySelectorAll('.card'));
+        const years = cards.map(c => parseInt(c.dataset.year));
+        const correct = checkPosition(index, year, years);
+
+        if (correct) {
+          draggedCard.classList.add('flipped');
+          timeline.insertBefore(draggedCard, timeline.children[index * 2]);
+          draggedCard = null;
+          correctCount++;
+          updateInfo();
+          renderDropzones();
+          createGuessInterface(timeline.children[index * 2 + 1]);
+        } else {
+          draggedCard.classList.add('flipped');
+          const back = draggedCard.querySelector('.card-back');
+          back.innerHTML = `<strong>${draggedCard.dataset.title}</strong><br/><em>${draggedCard.dataset.artist}</em><br/><span>${draggedCard.dataset.year}</span>`;
+          discard.innerHTML = '';
+          discard.appendChild(draggedCard);
+          draggedCard = null;
+          drawNextCard();
+          return;
+        }
+      });
+
+      return dz;
+    }
+
+    function checkPosition(index, year, years) {
+      const left = index === 0 ? -Infinity : years[index - 1];
+      const right = index === years.length ? Infinity : years[index];
+      return year > left && year < right;
+    }
+
+    function renderDropzones() {
+      const cards = Array.from(timeline.querySelectorAll('.card'));
+      timeline.innerHTML = '';
+      for (let i = 0; i <= cards.length; i++) {
+        timeline.appendChild(createDropzone(i));
+        if (i < cards.length) timeline.appendChild(cards[i]);
+      }
+    }
+
+    function drawNextCard() {
+      if (correctCount >= WIN_COUNT || songs.length === 0) return;
+
+      // Falls ein Eingabecontainer noch offen ist, behandle es wie ein Klick auf "Skip"
+      const openInput = document.querySelector('.card-back div');
+      if (openInput && openInput.querySelector('input')) {
+        const back = openInput.parentElement;
+        const card = back.closest('.card');
+        back.innerHTML = `<strong>${card.dataset.title}</strong><br/><em>${card.dataset.artist}</em><br/><span>${card.dataset.year}</span>`;
+      }
+
+      if (deck.children.length > 0) return;
+
+      const next = songs.shift();
+      const card = createCard(next);
+      deck.appendChild(card);
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function initGame() {
+      songs = shuffleArray(allSongs.slice());
+      deck.innerHTML = '';
+      timeline.innerHTML = '';
+      discard.innerHTML = '';
+      draggedCard = null;
+      gameStarted = false;
+      correctCount = 0;
+      restartButton.style.display = 'none';
+      deck.appendChild(createCard(songs.shift()));
+      timeline.appendChild(createDropzone(0));
+      updateInfo();
+    }
+
+    restartButton.addEventListener('click', initGame);
+    initGame();
+  </script>
+</body>
+</html>
