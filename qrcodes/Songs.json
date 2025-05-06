@@ -1,0 +1,146 @@
+[
+  {
+    "version": "DE01",
+    "number": "002",
+    "year": 1986,
+    "artist": "Paul Simon",
+    "name": "You Can Call Me Al",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "022",
+    "year": 2012,
+    "artist": "Cro",
+    "name": "Einmal um die Welt",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "032",
+    "year": 1964,
+    "artist": "Siw Malmkvist",
+    "name": "Liebeskummer lohnt sich nicht",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "043",
+    "year": 1980,
+    "artist": "Diana Ross",
+    "name": "Upside Down",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "058",
+    "year": 2011,
+    "artist": "Adele",
+    "name": "Set Fire To The Rain",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "060",
+    "year": 2012,
+    "artist": "Die Toten Hosen",
+    "name": "Tage wie diese",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "067",
+    "year": 1997,
+    "artist": "Tic Tac Toe",
+    "name": "Warum",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "068",
+    "year": 1988,
+    "artist": "Eddy Grant",
+    "name": "Gimme Hope Jo'anna",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "075",
+    "year": 1982,
+    "artist": "Billy Idol",
+    "name": "White Wedding",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "079",
+    "year": 1977,
+    "artist": "Plastic Bertrand",
+    "name": "Ca Plane Pour Moi",
+    "language": "French"
+  },
+  {
+    "version": "DE01",
+    "number": "084",
+    "year": 1983,
+    "artist": "Wofgang Petry",
+    "name": "Wahnsinn",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "090",
+    "year": 1954,
+    "artist": "Bill Haley & His Comets",
+    "name": "(We're Gonne) Rock Around The Clock",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "092",
+    "year": 1989,
+    "artist": "Kaoma",
+    "name": "Lambada",
+    "language": "Portuguese"
+  },
+  {
+    "version": "DE01",
+    "number": "110",
+    "year": 1956,
+    "artist": "Harry Belafonte",
+    "name": "Day-O (The Banana Boat Song)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "113",
+    "year": 2013,
+    "artist": "Miley Cyrus",
+    "name": "Wrecking Ball",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "116",
+    "year": 1958,
+    "artist": "Little Richard",
+    "name": "Good Golly, Miss Molly",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "137",
+    "year": 1981,
+    "artist": "The Human League",
+    "name": "Don't You Want Me",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "140",
+    "year": 1983,
+    "artist": "The Police",
+    "name": "Every Breath You Take",
+    "language": "English"
+  }
+]
