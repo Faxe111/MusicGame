@@ -24,7 +24,8 @@ fetch('songs.json')
     function updateInfo() {
       if (correctCount >= WIN_COUNT) {
         info.textContent = '🎉 Du hast 10 Songs richtig einsortiert und gewonnen!';
-        deck.innerHTML = '';
+        deck.style.display = 'none';
+        discard.style.display = 'none';
         restartButton.style.display = 'inline-block';
       } else {
         info.textContent = `Noch ${WIN_COUNT - correctCount} Songs bis zum Sieg`;
