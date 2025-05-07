@@ -93,6 +93,10 @@
     pointer-events: none;
     user-select: none;
     }
+    .card.locked {
+      cursor: default;
+      opacity: 0.95;
+    }
   </style>
   <script src="script.js" defer></script>
 </head>
@@ -103,7 +107,7 @@
   <div id="timeline"></div>
   <div id="bottom-row">
     <div id="deck"></div>
-    <h2>Ablagestapel (falsch sortiert)</h2>
+    <h2 id="DiscardInfo">Ablagestapel (falsch sortiert)</h2>
     <div id="discard"></div>
     <div id="info">Noch 10 Songs bis zum Sieg</div>
   </div>

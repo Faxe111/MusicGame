@@ -26,6 +26,7 @@ fetch('songs.json')
         info.textContent = '🎉 Du hast 10 Songs richtig einsortiert und gewonnen!';
         deck.style.display = 'none';
         discard.style.display = 'none';
+        DiscardInfo.style.display = 'none';
         restartButton.style.display = 'inline-block';
       } else {
         info.textContent = `Noch ${WIN_COUNT - correctCount} Songs bis zum Sieg`;
@@ -139,6 +140,8 @@ fetch('songs.json')
         if (!gameStarted) {
           const firstCard = draggedCard;
           firstCard.classList.add('flipped');
+          firstCard.draggable = false;
+          firstCard.classList.add('locked');
           timeline.innerHTML = '';
           timeline.appendChild(createDropzone(0));
           timeline.appendChild(firstCard);
@@ -158,6 +161,8 @@ fetch('songs.json')
 
         if (correct) {
           draggedCard.classList.add('flipped');
+          draggedCard.draggable = false;
+          firstCard.classList.add('locked');
           timeline.insertBefore(draggedCard, timeline.children[index * 2]);
           draggedCard = null;
           correctCount++;
@@ -166,6 +171,8 @@ fetch('songs.json')
           createGuessInterface(timeline.children[index * 2 + 1]);
         } else {
           draggedCard.classList.add('flipped');
+          draggedCard.draggable = false;
+          firstCard.classList.add('locked');
           const back = draggedCard.querySelector('.card-back');
           back.innerHTML = `<strong>${draggedCard.dataset.title}</strong><br/><em>${draggedCard.dataset.artist}</em><br/><span>${draggedCard.dataset.year}</span>`;
           discard.innerHTML = '';
