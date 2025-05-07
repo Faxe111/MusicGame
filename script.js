@@ -181,8 +181,9 @@ fetch('songs.json')
     function checkPosition(index, year, years) {
       const left = index === 0 ? -Infinity : years[index - 1];
       const right = index === years.length ? Infinity : years[index];
-      return year > left && year < right;
+      return year >= left && year <= right;
     }
+
 
     function renderDropzones() {
       const cards = Array.from(timeline.querySelectorAll('.card'));
