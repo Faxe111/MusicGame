@@ -102,6 +102,12 @@
       border: 3px solid red;
       box-shadow: 0 0 8px red;
     }
+    #discard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   </style>
   <script src="script.js" defer></script>
 </head>
@@ -111,9 +117,11 @@
   <h2>Deine Timeline</h2>
   <div id="timeline"></div>
   <div id="bottom-row">
-    <div id="deck"></div>
-    <h2 id="DiscardInfo">Ablagestapel (falsch sortiert)</h2>
-    <div id="discard"></div>
+   <div id="deck"></div>
+    <div id="discard-container">
+      <h2 id="DiscardInfo">Ablagestapel (falsch sortiert)</h2>
+      <div id="discard"></div>
+    </div>
     <div id="info">Noch 10 Songs bis zum Sieg</div>
   </div>
   <button id="restartButton">Spiel neu starten</button>
