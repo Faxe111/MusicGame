@@ -147,6 +147,9 @@ fetch('songs.json')
         if (!gameStarted) {
           const firstCard = draggedCard;
           firstCard.classList.add('flipped');
+          firstCard.dataset.locked = 'true';
+          firstCard.draggable = false;
+          firstCard.classList.add('locked');
           timeline.innerHTML = '';
           timeline.appendChild(createDropzone(0));
           timeline.appendChild(firstCard);
@@ -158,6 +161,7 @@ fetch('songs.json')
           createGuessInterface(firstCard);
           return;
         }
+
 
         const year = parseInt(draggedCard.dataset.year);
         const cards = Array.from(timeline.querySelectorAll('.card'));
