@@ -33,6 +33,8 @@
       width: 120px;
       height: 160px;
       perspective: 1000px;
+      border: 2px solid #ccc; /* Default border here */
+      border-radius: 8px;
     }
     .card-inner {
       width: 100%;
@@ -50,7 +52,6 @@
       height: 100%;
       backface-visibility: hidden;
       background: white;
-      border: 2px solid #ccc;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -60,6 +61,15 @@
     }
     .card-back {
       transform: rotateY(180deg);
+    }
+    .card.locked {
+      border: 3px solid green;
+      box-shadow: 0 0 8px green;
+    }
+
+    #discard .card {
+      border: 3px solid red;
+      box-shadow: 0 0 8px red;
     }
     .dropzone {
       width: 30px;
@@ -92,15 +102,6 @@
     .card-front img {
     pointer-events: none;
     user-select: none;
-    }
-    .card.locked {
-      border: 3px solid green;
-      box-shadow: 0 0 8px green;
-    }
-
-    #discard .card {
-      border: 3px solid red;
-      box-shadow: 0 0 8px red;
     }
   </style>
   <script src="script.js" defer></script>
