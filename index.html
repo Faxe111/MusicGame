@@ -33,7 +33,6 @@
       width: 120px;
       height: 160px;
       perspective: 1000px;
-      border: 2px solid #ccc; /* Default border here */
       border-radius: 8px;
     }
     .card-inner {
@@ -42,6 +41,8 @@
       position: relative;
       transform-style: preserve-3d;
       transition: transform 0.6s;
+      border: 2px solid #ccc;
+      border-radius: 8px;
     }
     .card.flipped .card-inner {
       transform: rotateY(180deg);
@@ -62,12 +63,12 @@
     .card-back {
       transform: rotateY(180deg);
     }
-    .card.locked {
+    .card.locked .card-inner {
       border: 3px solid green;
       box-shadow: 0 0 8px green;
     }
 
-    #discard .card {
+    #discard .card .card-inner{
       border: 3px solid red;
       box-shadow: 0 0 8px red;
     }
