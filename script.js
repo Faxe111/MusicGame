@@ -33,13 +33,15 @@ fetch('songs.json')
       }
     }
 
-    function createCard(song, showAll = false) {
+    function createCard(song, showAll = false, locked = false) {
       const card = document.createElement('div');
       card.className = 'card';
-      card.draggable = true;
+      card.draggable = !locked;
       card.dataset.year = song.year;
       card.dataset.title = song.title;
       card.dataset.artist = song.artist;
+      card.dataset.locked = locked;
+      if (locked) card.classList.add('locked');
 
       const inner = document.createElement('div');
       inner.className = 'card-inner';
@@ -60,10 +62,15 @@ fetch('songs.json')
       inner.appendChild(back);
       card.appendChild(inner);
 
-      card.addEventListener('dragstart', () => {
+      card.addEventListener('dragstart', (e) => {
+        if (card.dataset.locked === 'true') {
+          e.preventDefault();
+          return;
+        }
         draggedCard = card;
         card.classList.add('dragging');
       });
+
       card.addEventListener('dragend', () => {
         card.classList.remove('dragging');
       });
@@ -160,6 +167,9 @@ fetch('songs.json')
         if (correct) {
           draggedCard.classList.add('flipped');
           timeline.insertBefore(draggedCard, timeline.children[index * 2]);
+          draggedCard.dataset.locked = 'true';
+          draggedCard.draggable = false;
+          draggedCard.classList.add('locked');
           draggedCard = null;
           correctCount++;
           updateInfo();
@@ -169,11 +179,13 @@ fetch('songs.json')
           draggedCard.classList.add('flipped');
           const back = draggedCard.querySelector('.card-back');
           back.innerHTML = `<strong>${draggedCard.dataset.title}</strong><br/><em>${draggedCard.dataset.artist}</em><br/><span>${draggedCard.dataset.year}</span>`;
+          draggedCard.dataset.locked = 'true';
+          draggedCard.draggable = false;
+          draggedCard.classList.add('locked');
           discard.innerHTML = '';
           discard.appendChild(draggedCard);
           draggedCard = null;
           drawNextCard();
-          return;
         }
       });
 
