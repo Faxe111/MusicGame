@@ -19,15 +19,17 @@ fetch('songs.json')
     let draggedCard = null;
     let gameStarted = false;
     let correctCount = 0;
-    const WIN_COUNT = 10;
+    let WIN_COUNT = 10;
 
     function updateInfo() {
       if (correctCount >= WIN_COUNT) {
-        info.textContent = '🎉 Du hast 10 Songs richtig einsortiert und gewonnen!';
+        info.textContent = `🎉 Du hast ${WIN_COUNT} Songs richtig einsortiert und gewonnen!`;
         deck.style.display = 'none';
         discard.style.display = 'none';
         DiscardInfo.style.display = 'none';
         restartButton.style.display = 'inline-block';
+        document.getElementById('winCount').disabled = false;
+        document.getElementById('startButton').disabled = false;
       } else {
         info.textContent = `Noch ${WIN_COUNT - correctCount} Songs bis zum Sieg`;
       }
@@ -239,6 +241,9 @@ fetch('songs.json')
     }
 
     function initGame() {
+      const winCountSelect = document.getElementById('winCount');
+      WIN_COUNT = parseInt(winCountSelect.value);
+
       songs = shuffleArray(allSongs.slice());
       deck.innerHTML = '';
       timeline.innerHTML = '';
@@ -247,11 +252,14 @@ fetch('songs.json')
       gameStarted = false;
       correctCount = 0;
       restartButton.style.display = 'none';
-      deck.appendChild(createCard(songs.shift()));
-      timeline.appendChild(createDropzone(0));
+
+      drawNextCard();
       updateInfo();
+      document.getElementById('winCount').disabled = true;
+      document.getElementById('startButton').disabled = true;
     }
 
+    document.getElementById('startButton').addEventListener('click', initGame);
     restartButton.addEventListener('click', initGame);
     initGame();
     // Hier kannst du mit allSongs weiterarbeiten
