@@ -284,7 +284,6 @@ function renderDropzones() {
 
     document.getElementById('startButton').addEventListener('click', initGame);
     restartButton.addEventListener('click', initGame);
-    initGame();
     // Hier kannst du mit allSongs weiterarbeiten
     console.log(allSongs);
   });
