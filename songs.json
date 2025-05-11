@@ -1,10 +1,170 @@
 [
   {
     "version": "DE01",
+    "number": "001",
+    "year": 1975,
+    "artist": "Rudi Carrell",
+    "name": "Wann wird's mal wieder richtig Sommer?",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
     "number": "002",
     "year": 1986,
     "artist": "Paul Simon",
     "name": "You Can Call Me Al",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "003",
+    "year": 1981,
+    "artist": "The Rolling Stones",
+    "name": "Start Me Up",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "004",
+    "year": 1960,
+    "artist": "Chubby Checker",
+    "name": "The Twist",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "005",
+    "year": 2013,
+    "artist": "Robin Thicke, T.I. & Pharrell",
+    "name": "Blurred Lines",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "006",
+    "year": 2011,
+    "artist": "Taio Cruz",
+    "name": "Hangover",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "007",
+    "year": 2000,
+    "artist": "Daft Punk",
+    "name": "One More Time",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "008",
+    "year": 1987,
+    "artist": "T'Pau",
+    "name": "China In Your Hand",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "009",
+    "year": 1989,
+    "artist": "Tina Turner",
+    "name": "The Best",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "010",
+    "year": 1975,
+    "artist": "Van McCoy",
+    "name": "The Hustle",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "011",
+    "year": 1967,
+    "artist": "Erma Franklin",
+    "name": "Piece Of My Heart",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "012",
+    "year": 1987,
+    "artist": "Eric Carmen",
+    "name": "Hungry Eyes",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "013",
+    "year": 1983,
+    "artist": "Culture Club",
+    "name": "Karma Chameleon",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "014",
+    "year": 1983,
+    "artist": "Nena",
+    "name": "99 Luftballons",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "015",
+    "year": 1990,
+    "artist": "Torfrock",
+    "name": "Beinhart",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "016",
+    "year": 2003,
+    "artist": "50 Cent",
+    "name": "In Da Club",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "017",
+    "year": 1982,
+    "artist": "Yazoo",
+    "name": "Don't Go",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "018",
+    "year": 1987,
+    "artist": "Whitney Houston",
+    "name": "I Wanna Dance With Somebody (Who Loves Me)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "019",
+    "year": 2015,
+    "artist": "Lukas Graham",
+    "name": "7 Years",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "020",
+    "year": 1958,
+    "artist": "Peter Kraus",
+    "name": "Sugar Baby",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "021",
+    "year": 2015,
+    "artist": "Major Lazer, DJ Snake & Mø",
+    "name": "Lean On",
     "language": "English"
   },
   {
@@ -17,10 +177,154 @@
   },
   {
     "version": "DE01",
+    "number": "023",
+    "year": 1960,
+    "artist": "Trude Herr",
+    "name": "Ich will keine Schokolade",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "024",
+    "year": 2016,
+    "artist": "Max Giesinger",
+    "name": "80 Millionen",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "025",
+    "year": 1992,
+    "artist": "The Cure",
+    "name": "Friday I'm In Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "026",
+    "year": 1993,
+    "artist": "Haddaway",
+    "name": "What Is Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "027",
+    "year": 2014,
+    "artist": "Andreas Bourani",
+    "name": "Auf uns",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "028",
+    "year": 1981,
+    "artist": "Journey",
+    "name": "Don't Stop Believin",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "030",
+    "year": 1974,
+    "artist": "Reinhard Mey",
+    "name": "Über den Wolken",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "031",
+    "year": 2006,
+    "artist": "Amy Winehouse",
+    "name": "Rehab",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "032",
     "year": 1964,
     "artist": "Siw Malmkvist",
     "name": "Liebeskummer lohnt sich nicht",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "033",
+    "year": 1978,
+    "artist": "Sylvester",
+    "name": "You Make Me Feel (Mighty Real)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "034",
+    "year": 1974,
+    "artist": "Lynyrd Skynyrd",
+    "name": "Sweet Home Alabama",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "035",
+    "year": 1969,
+    "artist": "The Hollies",
+    "name": "He Ain't Heavy He's My Brother",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "036",
+    "year": 1972,
+    "artist": "Jürgen Marcus",
+    "name": "Eine neue Liebe ist wie ein neues Leben",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "037",
+    "year": 1986,
+    "artist": "The Bangles",
+    "name": "Manic Monday",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "038",
+    "year": 1978,
+    "artist": "Meat Loaf",
+    "name": "Paradise By The Dashboard Light",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "039",
+    "year": 1984,
+    "artist": "Limahl",
+    "name": "Never Ending Story",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "040",
+    "year": 2019,
+    "artist": "Mabel",
+    "name": "Don't Call Me Up",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "041",
+    "year": 1992,
+    "artist": "Red Hot Chili Peppers",
+    "name": "Under The Bridge",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "042",
+    "year": 1986,
+    "artist": "Rio Reiser",
+    "name": "König von Deutschland",
     "language": "German"
   },
   {
@@ -33,6 +337,118 @@
   },
   {
     "version": "DE01",
+    "number": "044",
+    "year": 1996,
+    "artist": "No Doubt",
+    "name": "Don't Speak",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "045",
+    "year": 1965,
+    "artist": "The Rolling Stones",
+    "name": "(I Can't Get No) Satisfaction",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "046",
+    "year": 2002,
+    "artist": "Nelly (feat. Kelly Rowland)",
+    "name": "Dilemma",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "047",
+    "year": 1970,
+    "artist": "The Kinks",
+    "name": "Lola",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "048",
+    "year": 1995,
+    "artist": "Captain Jack",
+    "name": "Captain Jack",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "049",
+    "year": 1986,
+    "artist": "Cyndi Lauper",
+    "name": "True Colors",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "050",
+    "year": 2003,
+    "artist": "Outkast",
+    "name": "Hey Ya!",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "051",
+    "year": 1929,
+    "artist": "Joseíto Fernández",
+    "name": "Guajira Guantanamera",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "052",
+    "year": 2018,
+    "artist": "Álvaro Soler",
+    "name": "La Cintura",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "053",
+    "year": 2004,
+    "artist": "Anastacia",
+    "name": "Sick and Tired",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "054",
+    "year": 1976,
+    "artist": "Chicago",
+    "name": "If You Leave Me Now",
+    "language": ""
+  },
+  {
+    "version": "DE01",
+    "number": "055",
+    "year": 1965,
+    "artist": "Udo Jürgens",
+    "name": "Siebzehn Jahr, blondes Haar",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "056",
+    "year": 2001,
+    "artist": "Sophie Ellis-Bextor",
+    "name": "Murder On The Dancefloor",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "057",
+    "year": 1993,
+    "artist": "Dr. Alban",
+    "name": "Sing Hallelujah!",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "058",
     "year": 2011,
     "artist": "Adele",
@@ -41,11 +457,67 @@
   },
   {
     "version": "DE01",
+    "number": "059",
+    "year": 1996,
+    "artist": "Blümchen",
+    "name": "Herz an Herz",
+    "language": "Deutsch"
+  },
+  {
+    "version": "DE01",
     "number": "060",
     "year": 2012,
     "artist": "Die Toten Hosen",
     "name": "Tage wie diese",
     "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "061",
+    "year": 1969,
+    "artist": "Neil Diamon",
+    "name": "Sweet Caroline",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "062",
+    "year": 1964,
+    "artist": "Manfred Mann",
+    "name": "Do Wah Diddy Diddy",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "063",
+    "year": 1978,
+    "artist": "Karat",
+    "name": "Über sieben Brücken musst du gehen",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "064",
+    "year": 1976,
+    "artist": "Thelma Houston ",
+    "name": "Don't Leave Me This Way",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "065",
+    "year": 2011,
+    "artist": "Macklemore & Ryan Lewis (feat. Ray Dalton)",
+    "name": "Can't Hold Us",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "066",
+    "year": 2007,
+    "artist": "Enrique Iglesias",
+    "name": "Do You Know? (The Ping Pong Song)",
+    "language": "English"
   },
   {
     "version": "DE01",
@@ -65,10 +537,74 @@
   },
   {
     "version": "DE01",
+    "number": "069",
+    "year": 1991,
+    "artist": "Scorpions",
+    "name": "Wind of Change",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "070",
+    "year": 1978,
+    "artist": "Chic",
+    "name": "Le Freak",
+    "language": "French"
+  },
+  {
+    "version": "DE01",
+    "number": "071",
+    "year": 2008,
+    "artist": "Peter Fox",
+    "name": "Haus am See",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "072",
+    "year": 2008,
+    "artist": "Lady Gaga",
+    "name": "Poker Face",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "073",
+    "year": 1977,
+    "artist": "Bonnie Tyler",
+    "name": "It's A Heartache",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "074",
+    "year": 1958,
+    "artist": "Chuck Berry",
+    "name": "Johnny B. Goode",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "075",
     "year": 1982,
     "artist": "Billy Idol",
     "name": "White Wedding",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "076",
+    "year": 1908,
+    "artist": "Enrico Caruso",
+    "name": "La Donna È Mobile (Rigoletto)",
+    "language": "Italian"
+  },
+  {
+    "version": "DE01",
+    "number": "077",
+    "year": 2017,
+    "artist": "Avicii",
+    "name": "Without You",
     "language": "English"
   },
   {
@@ -81,6 +617,38 @@
   },
   {
     "version": "DE01",
+    "number": "080",
+    "year": 1978,
+    "artist": "Patrick Hernandez",
+    "name": "Born To Be Alive",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "081",
+    "year": 1969,
+    "artist": "Led Zeppelin",
+    "name": "Whole Lotta Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "082",
+    "year": 2002,
+    "artist": "Sportfreunde Stiller",
+    "name": "Ein Kompliment",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "083",
+    "year": 1939,
+    "artist": "Glenn Miller",
+    "name": "In The Mood",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "084",
     "year": 1983,
     "artist": "Wofgang Petry",
@@ -89,10 +657,58 @@
   },
   {
     "version": "DE01",
+    "number": "085",
+    "year": 2013,
+    "artist": "OneRepublic",
+    "name": "Counting Stars",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "086",
+    "year": 2003,
+    "artist": "O-Zone",
+    "name": "Dragostea Din Tei",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "087",
+    "year": 1992,
+    "artist": "R.E.M.",
+    "name": "Everybody Hurts",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "088",
+    "year": 2013,
+    "artist": "P!nk (feat. Nate Ruess)",
+    "name": "Just Give Me A Reason",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "089",
+    "year": 1991,
+    "artist": "Roxette",
+    "name": "Joyride",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "090",
     "year": 1954,
     "artist": "Bill Haley & His Comets",
     "name": "(We're Gonne) Rock Around The Clock",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "091",
+    "year": 1981,
+    "artist": "Kim Carnes",
+    "name": "Bette Davis Eyes",
     "language": "English"
   },
   {
@@ -105,10 +721,154 @@
   },
   {
     "version": "DE01",
+    "number": "093",
+    "year": 1983,
+    "artist": "Rufus (feat. Chaka Khan)",
+    "name": "Ain't Nobody",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "094",
+    "year": 1971,
+    "artist": "Creedence Clearwater Revival",
+    "name": "Have You Ever Seen the Rain?",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "095",
+    "year": 1987,
+    "artist": "Bill Medley & Jennifer Warnes",
+    "name": "(I've Had) The Time Of My Life",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "096",
+    "year": 1996,
+    "artist": "Eros Ramazzotti",
+    "name": "Piú Bella Cosa",
+    "language": "Italian"
+  },
+  {
+    "version": "DE01",
+    "number": "097",
+    "year": 1991,
+    "artist": "Genesis",
+    "name": "No Son of Mine",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "098",
+    "year": 2013,
+    "artist": "Pharrell Williams",
+    "name": "Happy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "099",
+    "year": 1995,
+    "artist": "Oasis",
+    "name": "Wonderwall",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "100",
+    "year": 1966,
+    "artist": "The Supremes",
+    "name": "You Can't Hurry Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "101",
+    "year": 2005,
+    "artist": "Kanye West (feat. Jamie Foxx)",
+    "name": "Gold Digger",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "102",
+    "year": 1982,
+    "artist": "Markus",
+    "name": "Ich will Spaß",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "103",
+    "year": 2000,
+    "artist": "Modjo",
+    "name": "Lady (Hear Me Tonight)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "104",
+    "year": 1988,
+    "artist": "Fine Young Cannibals",
+    "name": "She Drives Me Crazy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "105",
+    "year": 1956,
+    "artist": "Freddy Quinn",
+    "name": "Heimweh (Dort wo die Blumen blüh'n)",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "106",
+    "year": 1979,
+    "artist": "Dschinghis Khan",
+    "name": "Moskau",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "107",
+    "year": 1994,
+    "artist": "Rednex",
+    "name": "Cotton Eye Joe",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "109",
+    "year": 1984,
+    "artist": "Bruce Springsteen",
+    "name": "Dancing In The Dark",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "110",
     "year": 1956,
     "artist": "Harry Belafonte",
     "name": "Day-O (The Banana Boat Song)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "111",
+    "year": 1963,
+    "artist": "Gitte Hænning",
+    "name": "Ich will 'nen Cowboy als Mann",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "112",
+    "year": 2020,
+    "artist": "Dua Lipa",
+    "name": "Break My Heart",
     "language": "English"
   },
   {
@@ -121,10 +881,178 @@
   },
   {
     "version": "DE01",
+    "number": "114",
+    "year": 1957,
+    "artist": "Elvis Presley",
+    "name": "Jailhouse Rock",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "116",
     "year": 1958,
     "artist": "Little Richard",
     "name": "Good Golly, Miss Molly",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "117",
+    "year": 2002,
+    "artist": "Las Ketchup",
+    "name": "The Ketchup Song (Aresejé)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "118",
+    "year": 2007,
+    "artist": "Mika",
+    "name": "Relax, Take It Easy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "119",
+    "year": 1966,
+    "artist": "The Monkees",
+    "name": "I'm A Believer",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "120",
+    "year": 1963,
+    "artist": "Manuela",
+    "name": "Schuld war nur der Bossa Nova",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "121",
+    "year": 2012,
+    "artist": "Icona Pop (feat. Charli XCX)",
+    "name": "I Love It",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "122",
+    "year": 2006,
+    "artist": "Bob Sinclar ( feat. Steve Edwards)",
+    "name": "Word, Hold On (Children Of The Sky)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "123",
+    "year": 1968,
+    "artist": "Steppenwolf",
+    "name": "Born To Be Wild",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "124",
+    "year": 2007,
+    "artist": "Mark Ronson (feat. Amy Winehouse)",
+    "name": "Valerie",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "125",
+    "year": 1960,
+    "artist": "Sam Cooke",
+    "name": "(What A) Wonderful World",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "126",
+    "year": 1984,
+    "artist": "Herbert Grönemeyer",
+    "name": "Männer",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "127",
+    "year": 1998,
+    "artist": "New Radicals",
+    "name": "You Get What You Give",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "128",
+    "year": 1968,
+    "artist": "Heintje",
+    "name": "Mama",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "129",
+    "year": 1997,
+    "artist": "Céline Dion",
+    "name": "My Heart Will Go On",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "130",
+    "year": 1986,
+    "artist": "Lionel Richie",
+    "name": "Dancing On The Ceiling",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "131",
+    "year": 1982,
+    "artist": "KC And The Sunshine Band",
+    "name": "Give It Up",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "132",
+    "year": 2002,
+    "artist": "Robbie Williams",
+    "name": "Feel",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "133",
+    "year": 2001,
+    "artist": "Nickelback",
+    "name": "How You Remind Me",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "134",
+    "year": 1987,
+    "artist": "George Harrison",
+    "name": "Got My Mind Set On You",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "135",
+    "year": 1990,
+    "artist": "Matthias Reim",
+    "name": "Verdammt, ich lieb' dich",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "136",
+    "year": 1993,
+    "artist": "Reel 2 Reel (feat. The Mad Stuntman)",
+    "name": "I Like To Move It",
     "language": "English"
   },
   {
@@ -137,10 +1065,1330 @@
   },
   {
     "version": "DE01",
+    "number": "139",
+    "year": 1988,
+    "artist": "Die Ärzte",
+    "name": "Westerland",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "140",
+    "year": 1983,
+    "artist": "The Police",
+    "name": "Every Breath You Take",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
     "number": "141",
     "year": 1997,
     "artist": "The Verve",
     "name": "Bitter Sweet Symphony",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "142",
+    "year": 1998,
+    "artist": "Will Smith",
+    "name": "Gettin' Jiggy Wit It",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "143",
+    "year": 1997,
+    "artist": "Aqua",
+    "name": "Barbie Girl",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "144",
+    "year": 1951,
+    "artist": "Cornelia Froboess",
+    "name": "Pack die Badehose ein",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "145",
+    "year": 1997,
+    "artist": "Natalie Imbruglia",
+    "name": "Torn",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "146",
+    "year": 1961,
+    "artist": "Dion",
+    "name": "The Wanderer",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "147",
+    "year": 1958,
+    "artist": "Ritchie Valens",
+    "name": "La Bamba",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "148",
+    "year": 2020,
+    "artist": "Drake",
+    "name": "Toosie Slide",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "149",
+    "year": 2021,
+    "artist": "Olivia Rodrigo",
+    "name": "Drivers License",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "150",
+    "year": 2011,
+    "artist": "Maroon 5 (feat. Christina Aguilera)",
+    "name": "Moves Like Jagger",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "151",
+    "year": 2013,
+    "artist": "Helene Fischer",
+    "name": "Atemlos durch die Nacht",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "152",
+    "year": 1998,
+    "artist": "Spice Girls",
+    "name": "Stop",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "153",
+    "year": 1999,
+    "artist": "Jennifer Lopez",
+    "name": "If You Had My Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "154",
+    "year": 1976,
+    "artist": "Boston",
+    "name": "More Than A Feeling",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "155",
+    "year": 1976,
+    "artist": "The Trammps",
+    "name": "Disco Inferno",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "156",
+    "year": 2018,
+    "artist": "Lewis Capaldi",
+    "name": "Somone You Loved",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "157",
+    "year": 1995,
+    "artist": "Die Doofen",
+    "name": "Mief! (Nimm ich jetzt, auch wenn ich stinke)",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "158",
+    "year": 1988,
+    "artist": "Guns N' Roses",
+    "name": "Sweet Child O' Mine",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "159",
+    "year": 1970,
+    "artist": "Elton John",
+    "name": "Your Song",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "160",
+    "year": 1968,
+    "artist": "Cliff Richard",
+    "name": "Congratulations",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "161",
+    "year": 1972,
+    "artist": "Carly Simon",
+    "name": "You're So Vain",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "162",
+    "year": 1977,
+    "artist": "Commodores",
+    "name": "Easy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "163",
+    "year": 1984,
+    "artist": "Alphaville",
+    "name": "Forever Young",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "164",
+    "year": 1982,
+    "artist": "Daryl Hall & John Oates",
+    "name": "Maneater",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "165",
+    "year": 1985,
+    "artist": "Falco",
+    "name": "Rock Me Amadeus",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "166",
+    "year": 1965,
+    "artist": "Sonny & Cher",
+    "name": "I Got You Babe",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "167",
+    "year": 2007,
+    "artist": "Die Ärzte",
+    "name": "Junge",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "168",
+    "year": 1987,
+    "artist": "Fleetwood Mac",
+    "name": "Everywhere",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "169",
+    "year": 1994,
+    "artist": "The Cranberries",
+    "name": "Zombie",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "170",
+    "year": 2010,
+    "artist": "Duck Sauce",
+    "name": "Barbra Streisand",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "171",
+    "year": 2007,
+    "artist": "Alicia Keys",
+    "name": "No One",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "172",
+    "year": 1987,
+    "artist": "George Miichael & Aretha Franklin",
+    "name": "I Knew You Were Waiting (For Me)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "173",
+    "year": 1975,
+    "artist": "Frankei Valli & The Four Season",
+    "name": "December, 1963 (Oh, What A Night)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "174",
+    "year": 2008,
+    "artist": "Madonna (feat. Justin Timberlade & Timbaland)",
+    "name": "4 Minutes",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "175",
+    "year": 1974,
+    "artist": "Kraftwerk",
+    "name": "Autobahn",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "176",
+    "year": 1971,
+    "artist": "Tom Jones",
+    "name": "She's A Lady",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "177",
+    "year": 2019,
+    "artist": "Shawn Mendes & Camila Cabello",
+    "name": "Señorita",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "178",
+    "year": 1996,
+    "artist": "Fugees",
+    "name": "Killing Me Softly With His Song",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "179",
+    "year": 2000,
+    "artist": "Britney Spears",
+    "name": "Oops!... I Did It Again",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "180",
+    "year": 2011,
+    "artist": "Tim Bendzko",
+    "name": "Nur noch kurz die Welt retten",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "181",
+    "year": 2009,
+    "artist": "Jason Derulo",
+    "name": "Whatcha Say",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "182",
+    "year": 1995,
+    "artist": "Pur",
+    "name": "Abenteuerland",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "183",
+    "year": 2005,
+    "artist": "Coldplay",
+    "name": "Talk",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "184",
+    "year": 2011,
+    "artist": "Gotye (feat. Kimbra)",
+    "name": "Somebody That I Used To Know",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "185",
+    "year": 1988,
+    "artist": "Tracy Chapman",
+    "name": "Fast Car",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "186",
+    "year": 1988,
+    "artist": "Mike & The Mechanics",
+    "name": "The Living Years",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "187",
+    "year": 2003,
+    "artist": "Buddy",
+    "name": "Ab in den Süden",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "188",
+    "year": 1998,
+    "artist": "Brandy (feat. Monica)",
+    "name": "The Boy Is Mine",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "189",
+    "year": 1958,
+    "artist": "The Everly Brothers",
+    "name": "All I Have To Do Is Dream",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "190",
+    "year": 1963,
+    "artist": "The Beach Boys",
+    "name": "Surfin' U.S.A.",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "191",
+    "year": 2001,
+    "artist": "Atomic Kitten",
+    "name": "Whole Again",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "192",
+    "year": 1989,
+    "artist": "Richard Marx",
+    "name": "Right Here Waiting",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "193",
+    "year": 2010,
+    "artist": "Unheilig",
+    "name": "Geboren um zu leben",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "194",
+    "year": 2012,
+    "artist": "SDP",
+    "name": "Die Nach von Freitag auf Montag",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "195",
+    "year": 2001,
+    "artist": "Alicia Keys",
+    "name": "Fallin'",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "196",
+    "year": 2010,
+    "artist": "Katy Perry",
+    "name": "Firework",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "197",
+    "year": 1999,
+    "artist": "Christina Aguilera",
+    "name": "Genie In A Bottle",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "198",
+    "year": 2012,
+    "artist": "Loreen",
+    "name": "Euphoria",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "199",
+    "year": 1982,
+    "artist": "TOTO",
+    "name": "Africa",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "200",
+    "year": 1957,
+    "artist": "Danny & The Juniors",
+    "name": "At The Hop",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "201",
+    "year": 1993,
+    "artist": "Culture Beat",
+    "name": "Mr. Vain",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "202",
+    "year": 1983,
+    "artist": "Eurythmics",
+    "name": "Sweet Dreams (Are Made Of This)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "203",
+    "year": 2014,
+    "artist": "Meghan Trainor",
+    "name": "All About That Bass",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "204",
+    "year": 1986,
+    "artist": "Crowded House",
+    "name": "Don't Dream It's Over",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "205",
+    "year": 1984,
+    "artist": "Price",
+    "name": "Purple Rain",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "206",
+    "year": 2013,
+    "artist": "John Legend",
+    "name": "All Of Me",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "207",
+    "year": 1964,
+    "artist": "Connie Francis",
+    "name": "Schöner fremder Mann",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "208",
+    "year": 1994,
+    "artist": "Wet Wet Wet",
+    "name": "Love Is All Around",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "209",
+    "year": 1995,
+    "artist": "Coolie (feat. L.V.)",
+    "name": "Gangsta's Paradise",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "210",
+    "year": 1956,
+    "artist": "Bill Haley & His Comets",
+    "name": "See You Later, Alligator",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "211",
+    "year": 1992,
+    "artist": "House Of Pain",
+    "name": "Jump Around",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "212",
+    "year": 1990,
+    "artist": "Sinéad O'Connor",
+    "name": "Nothing Compares 2 U",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "213",
+    "year": 1997,
+    "artist": "Rammstein",
+    "name": "Engel",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "214",
+    "year": 2005,
+    "artist": "Kelly Clarkson",
+    "name": "Because Of You",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "215",
+    "year": 1999,
+    "artist": "Echt",
+    "name": "Du trägst keine Liebe in dir",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "216",
+    "year": 1985,
+    "artist": "Stevie Wonder",
+    "name": "Part-Time Lovers",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "217",
+    "year": 1985,
+    "artist": "Dire Straits",
+    "name": "Walk Of Life",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "218",
+    "year": 1992,
+    "artist": "Ace Of Base",
+    "name": "All That She Wants",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "219",
+    "year": 1993,
+    "artist": "Die Prinzen",
+    "name": "Alles nur geklaut",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "220",
+    "year": 1974,
+    "artist": "ABBA",
+    "name": "Waterloo",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "221",
+    "year": 1985,
+    "artist": "Bryan Adams",
+    "name": "Heaven",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "222",
+    "year": 2005,
+    "artist": "Tokio Hotel",
+    "name": "Durch den Monsun",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "223",
+    "year": 1962,
+    "artist": "Little Eva",
+    "name": "The Loco-Motion",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "224",
+    "year": 1991,
+    "artist": "Nirvana",
+    "name": "Smells Like Teen Spirit",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "225",
+    "year": 1998,
+    "artist": "Lenny Kravitz",
+    "name": "Fly Away",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "226",
+    "year": 1984,
+    "artist": "Bronski Beat",
+    "name": "Smalltown Boy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "227",
+    "year": 1963,
+    "artist": "Johnny Cash",
+    "name": "Ring Of Fire",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "228",
+    "year": 1965,
+    "artist": "Nancy Sinatra",
+    "name": "These Boots Are Made For Walkin'",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "229",
+    "year": 2011,
+    "artist": "Jessie J (feat. B.O.B)",
+    "name": "Price Tag",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "230",
+    "year": 1960,
+    "artist": "Caterina Valente & Silvio Francesco",
+    "name": "Itsy Bitsy Teenie Weenie Honolulu Strand Bikini",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "231",
+    "year": 1992,
+    "artist": "Snow",
+    "name": "Infromer",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "232",
+    "year": 2006,
+    "artist": "Silbermond",
+    "name": "Das Beste",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "233",
+    "year": 1980,
+    "artist": "Kool & The Gang",
+    "name": "Celebration",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "234",
+    "year": 1998,
+    "artist": "Cher",
+    "name": "Believe",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "235",
+    "year": 1979,
+    "artist": "Amii Stewart",
+    "name": "Knock On Wood",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "236",
+    "year": 2008,
+    "artist": "Duffy",
+    "name": "Mercy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "237",
+    "year": 1979,
+    "artist": "Sister Sledge",
+    "name": "We Are Family",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "238",
+    "year": 1970,
+    "artist": "Mungo Jerry",
+    "name": "In The Summertime",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "239",
+    "year": 1996,
+    "artist": "Mark Morrison",
+    "name": "Return Of The Mack",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "240",
+    "year": 1961,
+    "artist": "Bill Ramsey",
+    "name": "Zuckerpuppe (aus der Bauchtanz-Truppe)",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "241",
+    "year": 1990,
+    "artist": "Vaya Con Dios",
+    "name": "Nah Neh Nah",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "242",
+    "year": 2005,
+    "artist": "Fettes Brot",
+    "name": "Emanuela",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "243",
+    "year": 1981,
+    "artist": "Spider Murphy Gang",
+    "name": "Skandal im Sperrbezirk",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "244",
+    "year": 2000,
+    "artist": "Bon Jovi",
+    "name": "It's My Life",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "245",
+    "year": 1954,
+    "artist": "Caterina Valente",
+    "name": "Ganz Paris träumt von der Liebe",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "246",
+    "year": 2003,
+    "artist": "Beyoncé (feat. Jay-Z)",
+    "name": "Crazy In Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "247",
+    "year": 2019,
+    "artist": "The Weeknd",
+    "name": "Blinding Lights",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "248",
+    "year": 1959,
+    "artist": "Freddy Quinn",
+    "name": "Die Gitarre und das Meer",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "249",
+    "year": 1997,
+    "artist": "Eagle-Eye Cherry",
+    "name": "Save Tonight",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "250",
+    "year": 1985,
+    "artist": "Simply Red",
+    "name": "Holding Back The Years",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "251",
+    "year": 1998,
+    "artist": "Die Firma",
+    "name": "Die Eine",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "252",
+    "year": 1984,
+    "artist": "Klaus Lage",
+    "name": "1000 und 1 Nacht (Zoom!)",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "253",
+    "year": 2021,
+    "artist": "Wincent Weiss & Johenns Oerding",
+    "name": "Die guten Zeiten",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "254",
+    "year": 2019,
+    "artist": "Post Malone",
+    "name": "Circles",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "255",
+    "year": 1965,
+    "artist": "Drafi Deutscher",
+    "name": "Marmor, Stein und Eisen bricht",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "256",
+    "year": 1992,
+    "artist": "Annie Lennox",
+    "name": "Why",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "257",
+    "year": 2015,
+    "artist": "Sia",
+    "name": "Cheap Thrills",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "258",
+    "year": 1981,
+    "artist": "Queen (feat. David Bowie)",
+    "name": "Under Pressure",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "259",
+    "year": 2004,
+    "artist": "Jay-Z & Linkin Park",
+    "name": "Numb (Encore)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "260",
+    "year": 1966,
+    "artist": "The Beach Boys",
+    "name": "Good Vibrations",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "261",
+    "year": 1955,
+    "artist": "Fats Domino",
+    "name": "Ain't That A Shame",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "262",
+    "year": 1992,
+    "artist": "U96",
+    "name": "Das Boot",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "263",
+    "year": 1999,
+    "artist": "Fatboy Slim",
+    "name": "Praise You",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "264",
+    "year": 2000,
+    "artist": "Enrique Iglesias & Whitney Houston",
+    "name": "Could I Have This Kiss Forever",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "265",
+    "year": 1982,
+    "artist": "Peter Schillig",
+    "name": "Major Tom (völlig losgelöst)",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "266",
+    "year": 2003,
+    "artist": "Black Eyed Peas",
+    "name": "Where Is The Love?",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "267",
+    "year": 2000,
+    "artist": "Shaggy",
+    "name": "It Wasn't Me",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "268",
+    "year": 2019,
+    "artist": "Tones And I",
+    "name": "Dance Monkey",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "269",
+    "year": 1964,
+    "artist": "Betty Everett",
+    "name": "It's In His Kiss (The Shoop Shoop Song)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "270",
+    "year": 1965,
+    "artist": "James Brown & The Famous Flames",
+    "name": "I Got You (I Feel Good)",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "271",
+    "year": 2005,
+    "artist": "Akon",
+    "name": "Lonely",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "272",
+    "year": 1981,
+    "artist": "Rick James",
+    "name": "Super Freak",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "273",
+    "year": 1974,
+    "artist": "Michael Holm",
+    "name": "Tränen lügen nicht",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "274",
+    "year": 1966,
+    "artist": "Percy Sledge",
+    "name": "When A Man Loves A Woman",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "275",
+    "year": 1977,
+    "artist": "Linda Ronstadt",
+    "name": "Blue Bayou",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "276",
+    "year": 1973,
+    "artist": "Dolly Parton",
+    "name": "Jolene",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "277",
+    "year": 2002,
+    "artist": "Mad'House",
+    "name": "Like A Prayer",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "278",
+    "year": 1953,
+    "artist": "Dean Martin",
+    "name": "That's Amore",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "279",
+    "year": 1973,
+    "artist": "Billy Joel",
+    "name": "Piano Man",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "280",
+    "year": 1970,
+    "artist": "Wencke Myhre",
+    "name": "Er hat ein knallrotes Gummiboot",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "281",
+    "year": 1969,
+    "artist": "David Bowie",
+    "name": "Space Oddity",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "282",
+    "year": 2021,
+    "artist": "Justin Bieber",
+    "name": "Anyone",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "283",
+    "year": 2016,
+    "artist": "Alessia Cara",
+    "name": "Scars To Your Beautiful",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "284",
+    "year": 1969,
+    "artist": "The Beatles",
+    "name": "Get Back",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "285",
+    "year": 2010,
+    "artist": "Shakira",
+    "name": "Waka Waka (This Time For Arfica)",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "286",
+    "year": 1976,
+    "artist": "Bryan Ferry",
+    "name": "Let's Stick Together",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "287",
+    "year": 2006,
+    "artist": "Corinne Bailey Rae",
+    "name": "Put Your Records On",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "288",
+    "year": 1990,
+    "artist": "Vanille Ice",
+    "name": " Ice Ice Baby",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "289",
+    "year": 1977,
+    "artist": "Leo Sayer",
+    "name": "When I Need You",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "290",
+    "year": 2019,
+    "artist": "Billie Eilish",
+    "name": "Bad Guy",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "291",
+    "year": 2017,
+    "artist": "Portugal. The Man",
+    "name": "Feel It Still",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "292",
+    "year": 2018,
+    "artist": "Lady Gaga & Bradley Cooper",
+    "name": "Shallow",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "293",
+    "year": 2007,
+    "artist": "Ich & Ich",
+    "name": "Vom selben Stern",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "294",
+    "year": 2009,
+    "artist": "Train",
+    "name": "Hey, Soul Sister",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "295",
+    "year": 1961,
+    "artist": "Elvis Presley",
+    "name": "Can't Help Falling In Love",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "296",
+    "year": 2004,
+    "artist": "Eric Prydz",
+    "name": "Call On Me",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "298",
+    "year": 1976,
+    "artist": "Jürgen Drews",
+    "name": "Ein Bett im Kornfeld",
+    "language": "German"
+  },
+  {
+    "version": "DE01",
+    "number": "299",
+    "year": 2000,
+    "artist": "Toploader",
+    "name": "Dancing In The Moonlight",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "303",
+    "year": 1958,
+    "artist": "The Chordettes",
+    "name": "Lollipop",
+    "language": "??"
+  },
+  {
+    "version": "DE01",
+    "number": "304",
+    "year": 1974,
+    "artist": "Bob Marley & The Wailers",
+    "name": "No Woman No Cry",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "305",
+    "year": 1967,
+    "artist": "Aretha Franklin",
+    "name": "Respect",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "306",
+    "year": 1970,
+    "artist": "Jimmy Cliff",
+    "name": "You Can Get It If You Really Want",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "307",
+    "year": 1965,
+    "artist": "Sam The Sham & The Pharaos",
+    "name": "Wooly Bully",
+    "language": "English"
+  },
+  {
+    "version": "DE01",
+    "number": "308",
+    "year": 2009,
+    "artist": "Owl City",
+    "name": "Fireflies",
     "language": "English"
   }
 ]
