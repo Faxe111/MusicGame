@@ -255,8 +255,8 @@ fetch('songs.json')
 
       drawNextCard();
       updateInfo();
-      document.getElementById('winCount').disabled = true;
-      document.getElementById('startButton').disabled = true;
+      //document.getElementById('winCount').disabled = true;
+      //document.getElementById('startButton').disabled = true;
     }
 
     document.getElementById('startButton').addEventListener('click', initGame);
