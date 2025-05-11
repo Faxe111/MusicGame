@@ -138,65 +138,87 @@ fetch('songs.json')
       back.appendChild(container);
     }
 
-    function createDropzone(index) {
-      const dz = document.createElement('div');
-      dz.className = 'dropzone';
+  function createDropzone(index) {
+  const dz = document.createElement('div');
+  dz.className = 'dropzone';
 
-      dz.addEventListener('dragover', e => e.preventDefault());
-      dz.addEventListener('drop', () => {
-        if (!draggedCard) return;
+  dz.addEventListener('dragover', e => {
+    e.preventDefault(); // ❗️Wichtig: Ohne das kein Drop!
+  });
 
-        if (!gameStarted) {
-          const firstCard = draggedCard;
-          firstCard.classList.add('flipped');
-          firstCard.dataset.locked = 'true';
-          firstCard.draggable = false;
-          firstCard.classList.add('locked');
-          timeline.innerHTML = '';
-          timeline.appendChild(createDropzone(0));
-          timeline.appendChild(firstCard);
-          timeline.appendChild(createDropzone(1));
-          draggedCard = null;
-          gameStarted = true;
-          correctCount = 1;
-          updateInfo();
-          createGuessInterface(firstCard);
-          return;
-        }
+  dz.addEventListener('drop', () => {
+    console.log("Dropzone triggered", { index, draggedCard });
 
-
-        const year = parseInt(draggedCard.dataset.year);
-        const cards = Array.from(timeline.querySelectorAll('.card'));
-        const years = cards.map(c => parseInt(c.dataset.year));
-        const correct = checkPosition(index, year, years);
-
-        if (correct) {
-          draggedCard.classList.add('flipped');
-          timeline.insertBefore(draggedCard, timeline.children[index * 2]);
-          draggedCard.dataset.locked = 'true';
-          draggedCard.draggable = false;
-          draggedCard.classList.add('locked');
-          draggedCard = null;
-          correctCount++;
-          updateInfo();
-          renderDropzones();
-          createGuessInterface(timeline.children[index * 2 + 1]);
-        } else {
-          draggedCard.classList.add('flipped');
-          const back = draggedCard.querySelector('.card-back');
-          back.innerHTML = `<strong>${draggedCard.dataset.title}</strong><br/><em>${draggedCard.dataset.artist}</em><br/><span>${draggedCard.dataset.year}</span>`;
-          draggedCard.dataset.locked = 'true';
-          draggedCard.draggable = false;
-          draggedCard.classList.add('locked');
-          discard.innerHTML = '';
-          discard.appendChild(draggedCard);
-          draggedCard = null;
-          drawNextCard();
-        }
-      });
-
-      return dz;
+    if (!draggedCard) {
+      console.warn("Keine Karte aktiv gezogen!");
+      return;
     }
+
+    const year = parseInt(draggedCard.dataset.year);
+    const cards = Array.from(timeline.querySelectorAll('.card'));
+    const years = cards.map(c => parseInt(c.dataset.year));
+
+    if (!gameStarted) {
+      // Erster Drop: Spielstart
+      const firstCard = draggedCard;
+      firstCard.classList.add('flipped');
+      firstCard.dataset.locked = 'true';
+      firstCard.draggable = false;
+      firstCard.classList.add('locked');
+
+      timeline.innerHTML = '';
+      timeline.appendChild(createDropzone(0));
+      timeline.appendChild(firstCard);
+      timeline.appendChild(createDropzone(1));
+
+      draggedCard = null;
+      gameStarted = true;
+      correctCount = 1;
+      updateInfo();
+      createGuessInterface(firstCard);
+      return;
+    }
+
+    const correct = checkPosition(index, year, years);
+    console.log("Position check", { index, year, years, correct });
+
+    // Index im DOM berechnen: Dropzone-Index * 2 ergibt die Position vor einer Karte
+    const insertPosition = index * 2;
+
+    if (correct) {
+      draggedCard.classList.add('flipped');
+      draggedCard.dataset.locked = 'true';
+      draggedCard.draggable = false;
+      draggedCard.classList.add('locked');
+
+      timeline.insertBefore(draggedCard, timeline.children[insertPosition]);
+      draggedCard = null;
+      correctCount++;
+      updateInfo();
+      renderDropzones(); // Timeline neu mit Dropzones aufbauen
+
+      // Das neue Element ist jetzt an Position insertPosition + 1 (nach Dropzone)
+      const justInsertedCard = timeline.querySelectorAll('.card')[index];
+      createGuessInterface(justInsertedCard);
+    } else {
+      draggedCard.classList.add('flipped');
+      const back = draggedCard.querySelector('.card-back');
+      back.innerHTML = `<strong>${draggedCard.dataset.title}</strong><br/><em>${draggedCard.dataset.artist}</em><br/><span>${draggedCard.dataset.year}</span>`;
+
+      draggedCard.dataset.locked = 'true';
+      draggedCard.draggable = false;
+      draggedCard.classList.add('locked');
+
+      discard.innerHTML = '';
+      discard.appendChild(draggedCard);
+      draggedCard = null;
+      drawNextCard();
+    }
+  });
+
+  return dz;
+}
+
 
     function checkPosition(index, year, years) {
       const left = index === 0 ? -Infinity : years[index - 1];
@@ -205,14 +227,15 @@ fetch('songs.json')
     }
 
 
-    function renderDropzones() {
-      const cards = Array.from(timeline.querySelectorAll('.card'));
-      timeline.innerHTML = '';
-      for (let i = 0; i <= cards.length; i++) {
-        timeline.appendChild(createDropzone(i));
-        if (i < cards.length) timeline.appendChild(cards[i]);
-      }
-    }
+function renderDropzones() {
+  const cards = Array.from(timeline.querySelectorAll('.card'));
+  timeline.innerHTML = '';
+  for (let i = 0; i <= cards.length; i++) {
+    timeline.appendChild(createDropzone(i));
+    if (i < cards.length) timeline.appendChild(cards[i]);
+  }
+}
+
 
     function drawNextCard() {
       if (correctCount >= WIN_COUNT || songs.length === 0) return;
